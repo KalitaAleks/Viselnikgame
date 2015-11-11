@@ -165,14 +165,30 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\0.jpg" />
-    <Content Include="Resources\6.jpg" />
-    <Content Include="Resources\5.jpg" />
-    <Content Include="Resources\4.jpg" />
-    <Content Include="Resources\3.jpg" />
-    <Content Include="Resources\2.jpg" />
-    <Content Include="Resources\1.jpg" />
-    <Content Include="Resources\7.jpg" />
+    <Content Include="Resources\0.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\6.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\7.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\Gf60xc4hVzU.jpg" />
     <None Include="Resources\background2.jpg" />
     <None Include="Resources\button-transport.jpg" />

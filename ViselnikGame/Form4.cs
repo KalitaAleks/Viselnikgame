@@ -81,7 +81,7 @@ namespace ViselnikGame
                 button28.Visible = true;
                 }
             //Выводим каринку висельницы если была нажта неверная буква.
-            pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\" + g.wrong_letters + ".jpg");
+            pictureBox1.Image = Image.FromFile("Resources\\"+ g.wrong_letters + ".jpg");
             // Если все слова были угаданы то выводим форму для победы.
             if (g.win == Game.words.Length) 
                 {
@@ -197,7 +197,7 @@ namespace ViselnikGame
                 this.Controls["label" + i.ToString()].Text = "";
                 }
             //Возвращаем картинку в начальное положение
-            pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.jpg");
+            pictureBox1.Image = Image.FromFile(@"Resources\0.jpg");
             button_color();
             
             }
