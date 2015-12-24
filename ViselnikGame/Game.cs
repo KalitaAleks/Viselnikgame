@@ -33,12 +33,10 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// Create files of words.
         /// </summary>
         public static string[] Animals = File.ReadAllLines(@"Resources\animals.txt");
-
         /// <summary>
         ///объект рандом который  задает индекс элемента массива  Words.
         /// </summary>
         Random rand = new Random();
-
         /// <summary>
         /// массив индексов 
         /// </summary>
@@ -100,7 +98,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
 
         
         int count = 0;
-
         /// <summary>
         /// Функция присваиваюшая длине выводимого массива длину слова и  заполняющего выводимый массив знаком "-".
         /// </summary>
