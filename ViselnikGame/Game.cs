@@ -56,7 +56,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         public int WinCounter = 0;
         public int LastNumberCounter = 0;
 
-        
         /// <summary>
         /// масив в который будет записываться массив выбраной категории.
         /// </summary>
@@ -96,7 +95,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 }
             }
 
-        
         int count = 0;
         /// <summary>
         /// Функция присваиваюшая длине выводимого массива длину слова и  заполняющего выводимый массив знаком "-".
