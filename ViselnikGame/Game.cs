@@ -125,6 +125,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 count++;
             }
             count = 0;
+
         }
 
         /// <summary>
@@ -170,6 +171,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         public void Start()
         {
             Logic();
+
         }
     }
 }
