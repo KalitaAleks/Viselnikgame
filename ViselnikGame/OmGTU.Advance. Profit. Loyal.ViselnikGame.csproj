@@ -89,7 +89,7 @@
       <DependentUpon>Form9.cs</DependentUpon>
     </Compile>
     <Compile Include="Game.cs">
-      <ExcludeFromStyleCop>False</ExcludeFromStyleCop>
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
