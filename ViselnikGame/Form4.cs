@@ -159,7 +159,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         count++;
                         }
 
-                    
                     for (int i = 2; i < 28; i++)
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;

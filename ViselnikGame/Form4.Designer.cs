@@ -913,8 +913,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
 
         #endregion
 
-
-
         /// <summary>
         /// Button surround
         /// </summary>

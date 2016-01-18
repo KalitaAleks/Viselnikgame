@@ -16,9 +16,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
     using System.Threading.Tasks;
     using System.Windows.Forms;
 
-   
-    
-
     /// <summary>
     /// Copy of a class of the form. 
     /// </summary>
@@ -36,7 +33,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             InitializeComponent();
             }
 
-        
         /// <summary>
         ///  Exit from the program.
         /// </summary>
@@ -73,4 +69,3 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             }
             }
         }
-    
