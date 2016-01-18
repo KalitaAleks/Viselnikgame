@@ -225,7 +225,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             //We return a picture in initial position.
             pictureBox1.Image = Image.FromFile(@"Resources\0.jpg");
             ButtonColor();
-            // If all words have been guessed that we remove the form for a victory.
+            //// If all words have been guessed that we remove the form for a victory.
             if (g.WinCounter == 5)
                 {
                 Form8 f8 = new Form8();
