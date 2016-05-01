@@ -21,12 +21,35 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
     /// </summary>
     public partial class Form3 : Form
         {
+        private void FormResize()
+            {
+            double W = (int)(Screen.PrimaryScreen.Bounds.Width);
+            double H = (int)(Screen.PrimaryScreen.Bounds.Height);
+            double kWidth = W / 1292;
+            double kHeght = H / 732;
+            this.Width = Convert.ToInt32(W);
+            this.Height = Convert.ToInt32(H);
+
+
+            for (int i = 1; i <= 4; i++)
+                {
+                int NewButtonWidth = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Width / 1.991) * kWidth);
+                this.Controls["Button" + i.ToString()].Width = NewButtonWidth;
+                int NewButtonHeght = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Height / 3.3) * kHeght);
+                this.Controls["Button" + i.ToString()].Height = NewButtonHeght;
+                int NewButtonLocationX = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.X * kWidth);
+                int NewButtonLocationY = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.Y * kHeght);
+                NewButtonWidth = 0;
+                NewButtonHeght = 0;
+                }
+            }
         /// <summary>
         ///  Form start.
         /// </summary>
         public Form3()
             {
             InitializeComponent();
+            FormResize();
             }
 
         /// <summary>
@@ -42,21 +65,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private void Categories(object sender, EventArgs e)
             {
             D = ActiveControl.Text;
-            if (D == "ANIMALS")
-                {
-                Game.words = Game.Animals;
-                }
-
-            if (D == "FOOD")
-                {
-                Game.words = Game.Food;
-                }
-
-            if (D == "TRANSPORT")
-                {
-                Game.words = Game.Transport;
-                }
-
+            Game.category = D;
             Form9 frm9 = new Form9();
             frm9.Categories = D;
             this.Hide();

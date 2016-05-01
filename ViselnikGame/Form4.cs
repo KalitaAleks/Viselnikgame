@@ -19,14 +19,41 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
   
     /// <summary>
     /// Copy of a class of the form.
-    /// </summary>
+    /// </summary>      
+
     public partial class Form4 : Form
         {
+
+        private void FormResize()
+            {
+            double W = (int)(Screen.PrimaryScreen.Bounds.Width);
+            double H = (int)(Screen.PrimaryScreen.Bounds.Height);
+            double kWidth = W / 1292;
+            double kHeght = H / 732;
+            this.Width = Convert.ToInt32(W);
+            this.Height = Convert.ToInt32(H);
+         int ww = Convert.ToUInt16(Convert.ToUInt16(this.pictureBox1.Width / 1.37)*kWidth);
+         int wh = Convert.ToUInt16(Convert.ToUInt16(this.pictureBox1.Height / 1.216)*kHeght);
+         this.pictureBox1.Width = ww;
+         this.pictureBox1.Height = wh;
+            for (int i = 1; i <= 28; i++)
+                {
+                int NewButtonWidth = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Width / 1.991) * kWidth);
+                this.Controls["Button" + i.ToString()].Width = NewButtonWidth;
+                int NewButtonHeght = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Height / 3.3) * kHeght);
+                this.Controls["Button" + i.ToString()].Height = NewButtonHeght;
+                int NewButtonLocationX = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.X * kWidth);
+                int NewButtonLocationY = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.Y * kHeght);
+                NewButtonWidth = 0;
+                NewButtonHeght = 0;
+                }
+            }
+
+
         /// <summary>
         /// Copy of class Game.
         /// </summary>
         Game g = new Game();
-
         /// <summary>
         ///  Form start.
         /// </summary>
@@ -47,6 +74,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 this.Controls["label" + (count + 1).ToString()].Text = g.conclusion[count].ToString();
                 count++;
                 }
+            FormResize();
             }
 
         /// <summary>
@@ -129,7 +157,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 g.WrongLettersCounter = 0;
                 if (Convert.ToInt32(complexity) == 1 && errorCount <= 4)
                     {
-                    g.conclusion = Game.words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
+                    g.conclusion = g.Words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
                     conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.
@@ -149,7 +177,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
 
                 if (Convert.ToInt32(complexity) == 2 && errorCount <= 2)
                     {
-                    g.conclusion = Game.words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
+                    g.conclusion = g.Words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
                     conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.
@@ -182,14 +210,8 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         }
                     }
                 }
-            if (Game.RightWordsCounter > errorCount && (Game.RightWordsCounter - errorCount)!=0 )
-                {
-                label13.Text = "Guess words: " + (Game.RightWordsCounter - errorCount).ToString();
-                }
-            if (Game.RightWordsCounter == 0 || Game.RightWordsCounter < errorCount)
-                {
-                label13.Text = "Guess words: 0";
-                }
+           
+                label13.Text = "Guess words: " + (Game.RightWordsCounter).ToString();
             label14.Text = "Not guess the word: " + errorCount.ToString();
             ActiveControl.Enabled = false;
             button1.Enabled = true;
@@ -203,7 +225,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private void Button28Click(object sender, EventArgs e)
             {
             g.WinCounter++;
-            Game.RightWordsCounter = g.WinCounter;
             button28.Visible = false;
             g.Filling_conclusion();
             g.WrongLettersCounter = 0;

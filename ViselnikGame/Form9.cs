@@ -21,12 +21,38 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
     /// </summary>
     public partial class Form9 : Form
         {
+        private void FormResize()
+            {
+            double W = (int)(Screen.PrimaryScreen.Bounds.Width);
+            double H = (int)(Screen.PrimaryScreen.Bounds.Height);
+            double kWidth = W / 1292;
+            double kHeght = H / 732;
+            this.Width = Convert.ToInt32(W);
+            this.Height = Convert.ToInt32(H);
+
+
+            for (int i = 1; i <= 3; i++)
+                {
+                int NewButtonWidth = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Width / 1.991) * kWidth);
+                this.Controls["Button" + i.ToString()].Width = NewButtonWidth;
+                int NewButtonHeght = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Height / 3.3) * kHeght);
+                this.Controls["Button" + i.ToString()].Height = NewButtonHeght;
+                string lok = Convert.ToString(this.Controls["Button" + i.ToString()].Location);
+                int NewButtonLocationX = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.X * kWidth);
+                int NewButtonLocationY = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.Y * kHeght);
+                this.Controls["Button" + i.ToString()].Location.Offset(NewButtonLocationX, NewButtonLocationY);
+                string lok1 = Convert.ToString(this.Controls["Button" + i.ToString()].Location);
+                NewButtonWidth = 0;
+                NewButtonHeght = 0;
+                }
+            }
         /// <summary>
         /// Form start.
         /// </summary>
         public Form9()
             {
             InitializeComponent();
+            FormResize();
             }
 
         /// <summary>
@@ -67,7 +93,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             {
             Complexity = 2;
             CallBack.CallBackEventHandler2(Complexity);
-            CallBack.CallBackEventHandler(Categories);
             this.Hide();
             frm4.Show();
             }
@@ -81,7 +106,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             {
             Complexity = 3;
             CallBack.CallBackEventHandler2(Complexity);
-            CallBack.CallBackEventHandler(Categories);
             this.Hide();
             frm4.Show();
             }

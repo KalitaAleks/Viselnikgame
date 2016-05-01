@@ -119,6 +119,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button2.TabIndex = 5;
             this.button2.Text = "A";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.ButtonClic);
             this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // label1
@@ -154,6 +155,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button3.TabIndex = 12;
             this.button3.Text = "U";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.ButtonClic);
             this.button3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button4
@@ -174,6 +176,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button4.TabIndex = 13;
             this.button4.Text = "T";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.ButtonClic);
             this.button4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button5
@@ -194,6 +197,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button5.TabIndex = 14;
             this.button5.Text = "S";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.ButtonClic);
             this.button5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button6
@@ -214,6 +218,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button6.TabIndex = 15;
             this.button6.Text = "R";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.ButtonClic);
             this.button6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button7
@@ -234,6 +239,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button7.TabIndex = 16;
             this.button7.Text = "Q";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.ButtonClic);
             this.button7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button8
@@ -254,6 +260,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button8.TabIndex = 17;
             this.button8.Text = "P";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.ButtonClic);
             this.button8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button9
@@ -274,6 +281,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button9.TabIndex = 18;
             this.button9.Text = "O";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.ButtonClic);
             this.button9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button10
@@ -294,6 +302,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button10.TabIndex = 19;
             this.button10.Text = "N";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.ButtonClic);
             this.button10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button11
@@ -314,6 +323,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button11.TabIndex = 20;
             this.button11.Text = "M";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.ButtonClic);
             this.button11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button12
@@ -334,6 +344,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button12.TabIndex = 21;
             this.button12.Text = "L";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.ButtonClic);
             this.button12.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button13
@@ -354,6 +365,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button13.TabIndex = 22;
             this.button13.Text = "K";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.ButtonClic);
             this.button13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button14
@@ -374,6 +386,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button14.TabIndex = 23;
             this.button14.Text = "J";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.ButtonClic);
             this.button14.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button15
@@ -394,6 +407,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button15.TabIndex = 24;
             this.button15.Text = "E";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.ButtonClic);
             this.button15.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button16
@@ -414,6 +428,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button16.TabIndex = 25;
             this.button16.Text = "I";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.ButtonClic);
             this.button16.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button17
@@ -434,6 +449,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button17.TabIndex = 26;
             this.button17.Text = "H";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.ButtonClic);
             this.button17.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button18
@@ -454,6 +470,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button18.TabIndex = 27;
             this.button18.Text = "G";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.ButtonClic);
             this.button18.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button19
@@ -474,6 +491,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button19.TabIndex = 28;
             this.button19.Text = "F";
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.ButtonClic);
             this.button19.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button20
@@ -494,6 +512,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button20.TabIndex = 29;
             this.button20.Text = "D";
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.ButtonClic);
             this.button20.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button21
@@ -514,6 +533,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button21.TabIndex = 30;
             this.button21.Text = "C";
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.ButtonClic);
             this.button21.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button23
@@ -534,6 +554,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button23.TabIndex = 32;
             this.button23.Text = "V";
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.ButtonClic);
             this.button23.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button24
@@ -554,6 +575,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button24.TabIndex = 33;
             this.button24.Text = "X";
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.ButtonClic);
             this.button24.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button25
@@ -574,6 +596,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button25.TabIndex = 34;
             this.button25.Text = "W";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.ButtonClic);
             this.button25.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button26
@@ -594,6 +617,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button26.TabIndex = 35;
             this.button26.Text = "Y";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.ButtonClic);
             this.button26.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button27
@@ -614,6 +638,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button27.TabIndex = 36;
             this.button27.Text = "Z";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.ButtonClic);
             this.button27.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // button22
@@ -634,6 +659,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button22.TabIndex = 41;
             this.button22.Text = "B";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.ButtonClic);
             this.button22.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
             // 
             // label11
