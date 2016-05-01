@@ -94,7 +94,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 if (random[i] == null)
                     {
                     random[i] = randm;
-                    word = Words[Convert.ToInt32(random[RightWordsCounter])].ToCharArray();
+                    word = Words[Convert.ToInt32(random[i])].ToCharArray();
                     break;
                     }
                 }
