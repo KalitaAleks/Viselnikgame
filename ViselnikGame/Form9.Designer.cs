@@ -59,7 +59,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(613, 281);
+            this.button1.Location = new System.Drawing.Point(622, 367);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 37);
             this.button1.TabIndex = 0;
@@ -82,7 +82,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(584, 345);
+            this.button2.Location = new System.Drawing.Point(593, 431);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(169, 37);
             this.button2.TabIndex = 1;
@@ -105,7 +105,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(607, 411);
+            this.button3.Location = new System.Drawing.Point(616, 497);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 37);
             this.button3.TabIndex = 2;
@@ -127,7 +127,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(607, 476);
+            this.button4.Location = new System.Drawing.Point(616, 562);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(104, 37);
             this.button4.TabIndex = 3;
@@ -139,7 +139,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::ViselnikGame.Properties.Resources._1280;
+            this.BackgroundImage = global::ViselnikGame.Properties.Resources.PC1280;
             this.ClientSize = new System.Drawing.Size(1384, 761);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

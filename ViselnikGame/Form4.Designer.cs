@@ -972,7 +972,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::ViselnikGame.Properties.Resources._1280;
+            this.BackgroundImage = global::ViselnikGame.Properties.Resources.G1280;
             this.ClientSize = new System.Drawing.Size(1384, 761);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);

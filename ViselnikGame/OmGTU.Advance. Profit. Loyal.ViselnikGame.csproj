@@ -143,23 +143,23 @@
     <Content Include="Resources\0.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\1x1aim.png" >
-    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Resources\1x1aim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\1280.jpg" >
-    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Resources\1280.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\1360.jpg" >
-    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Resources\1360.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\1366.jpg" >
-    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Resources\1366.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\1400.jpg" >
-    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Resources\1400.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\1600.jpg" >
-    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Resources\1600.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\6.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -221,7 +221,34 @@
     <Content Include="Resources\animals.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\LOSE.png" />
+    <Content Include="Resources\G1280.jpg" ><CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\G1360.jpg" ><CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\G1366.jpg" ><CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\G1400.jpg" ><CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\G1600.jpg" ><CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\LOSE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PC1280.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PC1360.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PC1366.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PC1400.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PC1600.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\spravka_1280.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

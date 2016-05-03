@@ -50,11 +50,11 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 NewButtonHeght = 0;
                 }
 
-            if (W == 1600) { this.BackgroundImage = Image.FromFile(@"Resources\1600.jpg"); }
-            else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\1400.jpg"); }
-            else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\1366.jpg"); }
-            else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\1360.jpg"); }
-            else if (W != 1600 || W != 1400 || W != 1366 || W != 1360) { this.BackgroundImage = Image.FromFile(@"Resources\FON_2_1280.jpg"); }
+            if (W == 1600) { this.BackgroundImage = Image.FromFile(@"Resources\G1600.jpg"); }
+            else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\G1400.jpg"); }
+            else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\G1366.jpg"); }
+            else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\G1360.jpg"); }
+            else if (W != 1600 || W != 1400 || W != 1366 || W != 1360) { this.BackgroundImage = Image.FromFile(@"Resources\G1280.jpg"); }
             }
 
 
