@@ -63,6 +63,66 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1280 {
+            get {
+                object obj = ResourceManager.GetObject("1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _12801 {
+            get {
+                object obj = ResourceManager.GetObject("12801", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1360 {
+            get {
+                object obj = ResourceManager.GetObject("1360", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1366 {
+            get {
+                object obj = ResourceManager.GetObject("1366", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1400 {
+            get {
+                object obj = ResourceManager.GetObject("1400", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1600 {
+            get {
+                object obj = ResourceManager.GetObject("1600", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1x1aim {
             get {
                 object obj = ResourceManager.GetObject("1x1aim", resourceCulture);
@@ -83,9 +143,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap average {
+        internal static System.Drawing.Bitmap Bg1_1280_800 {
             get {
-                object obj = ResourceManager.GetObject("average", resourceCulture);
+                object obj = ResourceManager.GetObject("Bg1_1280_800", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +153,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background {
+        internal static System.Drawing.Bitmap Bg1_1360_768 {
             get {
-                object obj = ResourceManager.GetObject("background", resourceCulture);
+                object obj = ResourceManager.GetObject("Bg1_1360_768", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +163,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background2 {
+        internal static System.Drawing.Bitmap Bg1_1366_768 {
             get {
-                object obj = ResourceManager.GetObject("background2", resourceCulture);
+                object obj = ResourceManager.GetObject("Bg1_1366_768", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +173,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonAnimals {
+        internal static System.Drawing.Bitmap Bg1_1400_900 {
             get {
-                object obj = ResourceManager.GetObject("buttonAnimals", resourceCulture);
+                object obj = ResourceManager.GetObject("Bg1_1400_900", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +183,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonBack {
+        internal static System.Drawing.Bitmap Bg1_1600_900 {
             get {
-                object obj = ResourceManager.GetObject("buttonBack", resourceCulture);
+                object obj = ResourceManager.GetObject("Bg1_1600_900", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +193,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonExit {
+        internal static System.Drawing.Bitmap FON_2_1280 {
             get {
-                object obj = ResourceManager.GetObject("buttonExit", resourceCulture);
+                object obj = ResourceManager.GetObject("FON_2_1280", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +203,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonFood {
+        internal static System.Drawing.Bitmap FON_2_1360 {
             get {
-                object obj = ResourceManager.GetObject("buttonFood", resourceCulture);
+                object obj = ResourceManager.GetObject("FON_2_1360", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +213,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonHelp {
+        internal static System.Drawing.Bitmap FON_2_1366 {
             get {
-                object obj = ResourceManager.GetObject("buttonHelp", resourceCulture);
+                object obj = ResourceManager.GetObject("FON_2_1366", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +223,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonStart {
+        internal static System.Drawing.Bitmap FON_2_1400 {
             get {
-                object obj = ResourceManager.GetObject("buttonStart", resourceCulture);
+                object obj = ResourceManager.GetObject("FON_2_1400", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,59 +233,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonTransport {
+        internal static System.Drawing.Bitmap FON_2_1600 {
             get {
-                object obj = ResourceManager.GetObject("buttonTransport", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap easy {
-            get {
-                object obj = ResourceManager.GetObject("easy", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap exampleWindowVideo {
-            get {
-                object obj = ResourceManager.GetObject("exampleWindowVideo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap exampleWindowVideo1 {
-            get {
-                object obj = ResourceManager.GetObject("exampleWindowVideo1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Gf60xc4hVzU {
-            get {
-                object obj = ResourceManager.GetObject("Gf60xc4hVzU", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap hard {
-            get {
-                object obj = ResourceManager.GetObject("hard", resourceCulture);
+                object obj = ResourceManager.GetObject("FON_2_1600", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +253,9 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap next_world {
+        internal static System.Drawing.Bitmap spravka_1280 {
             get {
-                object obj = ResourceManager.GetObject("next_world", resourceCulture);
+                object obj = ResourceManager.GetObject("spravka_1280", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +263,39 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap surrenden {
+        internal static System.Drawing.Bitmap spravka_1360 {
             get {
-                object obj = ResourceManager.GetObject("surrenden", resourceCulture);
+                object obj = ResourceManager.GetObject("spravka_1360", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spravka_1366 {
+            get {
+                object obj = ResourceManager.GetObject("spravka_1366", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spravka_1400 {
+            get {
+                object obj = ResourceManager.GetObject("spravka_1400", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spravka_1600 {
+            get {
+                object obj = ResourceManager.GetObject("spravka_1600", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

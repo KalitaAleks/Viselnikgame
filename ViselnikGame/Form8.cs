@@ -30,19 +30,25 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             double kHeght = H / 732;
             this.Width = Convert.ToInt32(W);
             this.Height = Convert.ToInt32(H);
-
+            this.pictureBox1.Left = Convert.ToUInt16(pictureBox1.Location.X * kWidth);
+            this.pictureBox1.Top = Convert.ToUInt16(pictureBox1.Location.Y * kHeght);
+            this.label1.Left = Convert.ToUInt16(label1.Location.X * kWidth);
+            this.label1.Left = Convert.ToUInt16(label1.Location.Y * kHeght);
                 int NewButtonWidth = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + 1.ToString()].Width / 1.991) * kWidth);
                 this.Controls["Button" + 1.ToString()].Width = NewButtonWidth;
                 int NewButtonHeght = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + 1.ToString()].Height / 3.3) * kHeght);
                 this.Controls["Button" + 1.ToString()].Height = NewButtonHeght;
-                string lok = Convert.ToString(this.Controls["Button" + 1.ToString()].Location);
-                int NewButtonLocationX = Convert.ToUInt16(this.Controls["Button" + 1.ToString()].Location.X * kWidth);
-                int NewButtonLocationY = Convert.ToUInt16(this.Controls["Button" + 1.ToString()].Location.Y * kHeght);
-                this.Controls["Button" + 1.ToString()].Location.Offset(NewButtonLocationX, NewButtonLocationY);
-                string lok1 = Convert.ToString(this.Controls["Button" + 1.ToString()].Location);
+                this.Controls["Button" + 1.ToString()].Left = Convert.ToUInt16(this.Controls["Button" + 1.ToString()].Location.X * kWidth);
+                this.Controls["Button" + 1.ToString()].Top = Convert.ToUInt16(this.Controls["Button" + 1.ToString()].Location.Y * kHeght);
                 NewButtonWidth = 0;
                 NewButtonHeght = 0;
-                
+
+
+                if (W == 1600) { this.BackgroundImage = Image.FromFile(@"Resources\1600.jpg"); }
+                else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\1400.jpg"); }
+                else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\1366.jpg"); }
+                else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\1360.jpg"); }
+                else if (W != 1600 || W != 1400 || W != 1366 || W != 1360) { this.BackgroundImage = Image.FromFile(@"Resources\FON_2_1280.jpg"); }
             }
         /// <summary>
         /// Form start.
@@ -50,6 +56,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         public Form8()
             {
             InitializeComponent();
+            FormResize();
             }
 
         /// <summary>

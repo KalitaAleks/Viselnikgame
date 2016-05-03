@@ -36,17 +36,25 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
          int wh = Convert.ToUInt16(Convert.ToUInt16(this.pictureBox1.Height / 1.216)*kHeght);
          this.pictureBox1.Width = ww;
          this.pictureBox1.Height = wh;
+         this.pictureBox1.Left = Convert.ToUInt16(pictureBox1.Location.X * kWidth);
+         this.pictureBox1.Top = Convert.ToUInt16(pictureBox1.Location.Y * kHeght);  
             for (int i = 1; i <= 28; i++)
                 {
                 int NewButtonWidth = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Width / 1.991) * kWidth);
                 this.Controls["Button" + i.ToString()].Width = NewButtonWidth;
                 int NewButtonHeght = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Height / 3.3) * kHeght);
                 this.Controls["Button" + i.ToString()].Height = NewButtonHeght;
-                int NewButtonLocationX = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.X * kWidth);
-                int NewButtonLocationY = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.Y * kHeght);
+                this.Controls["Button" + i.ToString()].Left = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.X * kWidth);
+                this.Controls["Button" + i.ToString()].Top = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.Y * kHeght);
                 NewButtonWidth = 0;
                 NewButtonHeght = 0;
                 }
+
+            if (W == 1600) { this.BackgroundImage = Image.FromFile(@"Resources\1600.jpg"); }
+            else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\1400.jpg"); }
+            else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\1366.jpg"); }
+            else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\1360.jpg"); }
+            else if (W != 1600 || W != 1400 || W != 1366 || W != 1360) { this.BackgroundImage = Image.FromFile(@"Resources\FON_2_1280.jpg"); }
             }
 
 
@@ -117,7 +125,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private void ButtonClic(object sender, EventArgs e)
             {
             // By pressing the button its colour is changed.
-            ActiveControl.BackColor = Color.Red;
+            ActiveControl.BackColor = Color.DarkRed;
 
             //Receive value of a letter
             z = ActiveControl.Text;
@@ -138,7 +146,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 }
 
             // We remove the transition button on следуюшее a word.
-            if (Game.RightWordsCounter > g.LastNumberCounter)
+            if (Game.CorrectLettersCounter==g.conclusion.Length && Game.RightWordsCounter+errorCount<=5)
                 {
                 for (int i = 2; i < 28; i++)
                     {
@@ -147,9 +155,16 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 button28.Visible = true;
                 }
 
-            //We remove a gallows picture if there was нажта an incorrect letter.
-            pictureBox1.Image = Image.FromFile(@"Resources\" + g.WrongLettersCounter + ".jpg");
+            //We remove a gallows picture if there was press an incorrect letter.
+            if (g.WrongLettersCounter != 0)
+                {
+                pictureBox1.Image = Image.FromFile(@"Resources\" + g.WrongLettersCounter + ".jpg");
+                }
 
+            if (g.WrongLettersCounter == 0)
+                {
+                pictureBox1.Image = null;
+                }
             if (g.WrongLettersCounter == 7 )
                 {
                 count = 0;
@@ -157,7 +172,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 g.WrongLettersCounter = 0;
                 if (Convert.ToInt32(complexity) == 1 && errorCount <= 4)
                     {
-                    g.conclusion = g.Words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
+                    g.conclusion = g.Words[Convert.ToInt32(g.random[g.index])].ToCharArray();
                     conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.
@@ -177,7 +192,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
 
                 if (Convert.ToInt32(complexity) == 2 && errorCount <= 2)
                     {
-                    g.conclusion = g.Words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
+                    g.conclusion = g.Words[Convert.ToInt32(g.random[g.index])].ToCharArray();
                     conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.
@@ -244,8 +259,8 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 }
 
             //We return a picture in initial position.
-            pictureBox1.Image = Image.FromFile(@"Resources\0.jpg");
-            ButtonColor();
+            pictureBox1.Image=null;
+            ButtonColor();     
             // If all words have been guessed that we remove the form for a victory.
             if (g.WinCounter == 5)
                 {

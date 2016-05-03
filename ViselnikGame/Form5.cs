@@ -37,11 +37,16 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 this.Controls["Button" + i.ToString()].Width = NewButtonWidth;
                 int NewButtonHeght = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Height / 3.3) * kHeght);
                 this.Controls["Button" + i.ToString()].Height = NewButtonHeght;
-                int NewButtonLocationX = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.X * kWidth);
-                int NewButtonLocationY = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.Y * kHeght);
+                this.Controls["Button" + i.ToString()].Left = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.X * kWidth);
+                this.Controls["Button" + i.ToString()].Top = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.Y * kHeght);
                 NewButtonWidth = 0;
                 NewButtonHeght = 0;
                 }
+            if (W == 1600) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1600.jpg"); }
+            else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1400.jpg"); }
+            else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1366.jpg"); }
+            else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1360.jpg"); }
+            else if (W != 1600 || W != 1400 || W != 1366 || W != 1360) { this.BackgroundImage = Image.FromFile(@"Resources\FON_2_1280.jpg"); }
             }
         /// <summary>
         ///  Form start.

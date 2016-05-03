@@ -143,7 +143,24 @@
     <Content Include="Resources\0.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\1x1aim.png" />
+    <Content Include="Resources\1x1aim.png" >
+    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\1280.jpg" >
+    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\1360.jpg" >
+    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\1366.jpg" >
+    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\1400.jpg" >
+    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\1600.jpg" >
+    	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\6.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -165,36 +182,65 @@
     <Content Include="Resources\7.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\average.jpg" />
-    <None Include="Resources\easy.jpg" />
-    <None Include="Resources\896700.gif" />
+    <Content Include="Resources\896700.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Bg1_1280_800.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Bg1_1360_768.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Bg1_1366_768.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Bg1_1400_900.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Bg1_1600_900.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FON_2_1280.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FON_2_1360.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FON_2_1366.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FON_2_1400.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FON_2_1600.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\FOOD.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\animals.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\hard.jpg" />
-    <None Include="Resources\next_world.jpg" />
-    <None Include="Resources\surrenden.jpg" />
     <None Include="Resources\LOSE.png" />
+    <Content Include="Resources\spravka_1280.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\spravka_1360.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\spravka_1366.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\spravka_1400.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\spravka_1600.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\transport.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Gf60xc4hVzU.jpg" />
-    <None Include="Resources\background2.jpg" />
-    <None Include="Resources\button-transport.jpg" />
-    <None Include="Resources\button-food.jpg" />
-    <None Include="Resources\button-animals.jpg" />
-    <None Include="Resources\example window 3  help.jpg" />
-    <None Include="Resources\example window 2.jpg" />
-    <None Include="Resources\button-back.jpg" />
-    <None Include="Resources\example window-video .jpg" />
-    <None Include="Resources\background.jpg" />
-    <None Include="Resources\button-start.jpg" />
-    <None Include="Resources\button-help.jpg" />
-    <None Include="Resources\button-exit.jpg" />
-    <None Include="Resources\example window .jpg" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">

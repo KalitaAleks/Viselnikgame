@@ -77,13 +77,14 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// <summary>
         /// Функция записывающая выбраное случайно и не повторяющееся с прошлыми слово в массив символов.
         /// </summary>
-   
+        public int index=0;
         public void Filiing_word()
             {
             ReadFile();
             string randm = rand.Next(0, 20).ToString();
             for (int i = 0; i < 5; i++)
                 {
+                index = i;
                 if (random[i] != null)
                     {
                     if (random[i] == randm)
