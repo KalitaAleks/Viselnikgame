@@ -219,6 +219,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                     g.WinCounter = 0;
                     g.WrongLettersCounter = 0;
                     Game.RightWordsCounter = 0;
+                    Game.CorrectLettersCounter = 0;
                     for (int i = 2; i < 28; i++)
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;

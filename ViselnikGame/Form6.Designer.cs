@@ -56,7 +56,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(485, 641);
+            this.button1.Location = new System.Drawing.Point(516, 655);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(310, 73);
             this.button1.TabIndex = 0;
@@ -70,7 +70,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(562, 591);
+            this.label1.Location = new System.Drawing.Point(602, 625);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 27);
             this.label1.TabIndex = 1;
@@ -90,7 +90,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::ViselnikGame.Properties.Resources._1280;
+            this.BackgroundImage = global::ViselnikGame.Properties.Resources.G1280;
             this.ClientSize = new System.Drawing.Size(1384, 761);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);

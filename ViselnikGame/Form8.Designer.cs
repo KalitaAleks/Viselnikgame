@@ -71,7 +71,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(616, 558);
+            this.label1.Location = new System.Drawing.Point(594, 558);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 27);
             this.label1.TabIndex = 2;
@@ -91,7 +91,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::ViselnikGame.Properties.Resources._1280;
+            this.BackgroundImage = global::ViselnikGame.Properties.Resources.G1280;
             this.ClientSize = new System.Drawing.Size(1384, 761);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
