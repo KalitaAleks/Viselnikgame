@@ -97,6 +97,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             {
             Complexity = 2;
             CallBack.CallBackEventHandler2(Complexity);
+            CallBack.CallBackEventHandler(Categories);
             this.Hide();
             frm4.Show();
             }
@@ -110,6 +111,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             {
             Complexity = 3;
             CallBack.CallBackEventHandler2(Complexity);
+            CallBack.CallBackEventHandler(Categories);
             this.Hide();
             frm4.Show();
             }
