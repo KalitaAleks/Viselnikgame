@@ -127,7 +127,8 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             // 
             // Form2
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Wheat;
             this.BackgroundImage = global::ViselnikGame.Properties.Resources.Bg1_1600_900;
             this.ClientSize = new System.Drawing.Size(1292, 732);
@@ -136,7 +137,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form2";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

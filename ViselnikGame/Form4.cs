@@ -54,7 +54,9 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\G1400.jpg"); }
             else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\G1366.jpg"); }
             else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\G1360.jpg"); }
-            else if (W != 1600 || W != 1400 || W != 1366 || W != 1360) { this.BackgroundImage = Image.FromFile(@"Resources\G1280.jpg"); }
+            else if (W==1280) { this.BackgroundImage = Image.FromFile(@"Resources\G1280.jpg"); }
+            else if (W < 1280) { this.BackgroundImage = Image.FromFile(@"Resources\G1280.jpg"); }
+            else if (W > 1600) { this.BackgroundImage = Image.FromFile(@"Resources\G1600.jpg"); }
             }
 
 
@@ -152,6 +154,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                     {
                     this.Controls["button" + (i).ToString()].Enabled = false;
                     }
+                label15.Text = "You guessed a word";
                 button28.Visible = true;
                 }
 
@@ -186,7 +189,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
                         }
-
+                    label15.Text = "You did not guess a word";
                     button28.Visible = true;
                     }
 
@@ -207,15 +210,22 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
                         }
-
+                    label15.Text = "You did not guess a word";
                     button28.Visible = true;
                     }
 
                 if ((Convert.ToInt32(complexity) == 2 && errorCount > 2) || (Convert.ToInt32(complexity) == 1 && errorCount > 4) || (Convert.ToInt32(complexity) == 3))
                     {
+                    label15.Text = "You did not guess a word";
                     Form6 f6 = new Form6();
-                    this.Hide();
+                    f6.Opacity = 0;
                     f6.Show();
+                    for (int i = 0; i <= 100; i++)
+                        {
+                        f6.Opacity = i / 100.0;
+                        System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                        }
+                    this.Hide();
                     g.WinCounter = 0;
                     g.WrongLettersCounter = 0;
                     Game.RightWordsCounter = 0;
@@ -226,9 +236,9 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         }
                     }
                 }
-           
-                label13.Text = "Guess words: " + (Game.RightWordsCounter).ToString();
-            label14.Text = "Not guess the word: " + errorCount.ToString();
+
+            label13.Text = "Amount of the guessed words: " + (Game.RightWordsCounter).ToString();
+            label14.Text = "Amount of not guessed words: " + errorCount.ToString();
             ActiveControl.Enabled = false;
             button1.Enabled = true;
             }
@@ -246,7 +256,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             g.WrongLettersCounter = 0;
             Game.CorrectLettersCounter = 0;
             int count = 0;
-
+            label15.Text = "";
             // We specify how many letters in a following word.
             foreach (char el in g.conclusion)
                 {
@@ -266,8 +276,14 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             if (g.WinCounter == 5)
                 {
                 Form8 f8 = new Form8();
-                this.Hide();
+                f8.Opacity = 0;
                 f8.Show();
+                for (int i = 0; i <= 100; i++)
+                    {
+                    f8.Opacity = i / 100.0;
+                    System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                    }
+                this.Close();
                 g.WinCounter = 0;
                 g.WrongLettersCounter = 0;
                 Game.RightWordsCounter = 0;
@@ -288,8 +304,14 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
 
             // Transition to the form back.
             Form3 f3 = new Form3();
-            this.Close();
+            f3.Opacity = 0;
             f3.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                f3.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            this.Close();
             }
 
         /// <summary>

@@ -50,7 +50,9 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\G1400.jpg"); }
             else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\G1366.jpg"); }
             else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\G1360.jpg"); }
-            else if (W != 1600 || W != 1400 || W != 1366 || W != 1360) { this.BackgroundImage = Image.FromFile(@"Resources\G1280.jpg"); }
+            else if (W == 1280) { this.BackgroundImage = Image.FromFile(@"Resources\G1280.jpg"); }
+            else if (W < 1280) { this.BackgroundImage = Image.FromFile(@"Resources\G1280.jpg"); }
+            else if (W > 1600) { this.BackgroundImage = Image.FromFile(@"Resources\G1600.jpg"); }
             }
 
         /// <summary>
@@ -70,8 +72,16 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private void Button1Click(object sender, EventArgs e)
             {
             Form3 f3 = new Form3();
-            this.Hide();
+            f3.Opacity = 0;
             f3.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                f3.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            Form4 f4 = new Form4();
+            f4.Close();
+            this.Close();
             }
         }
     }

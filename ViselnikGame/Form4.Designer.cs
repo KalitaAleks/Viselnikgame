@@ -81,6 +81,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -767,7 +768,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label12.Font = new System.Drawing.Font("Tagus", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(67, 71);
+            this.label12.Location = new System.Drawing.Point(67, 117);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(370, 96);
             this.label12.TabIndex = 43;
@@ -938,11 +939,11 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Tagus", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(789, 58);
+            this.label13.Location = new System.Drawing.Point(615, 19);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(208, 27);
+            this.label13.Size = new System.Drawing.Size(372, 27);
             this.label13.TabIndex = 87;
-            this.label13.Text = "Guessed words: 0";
+            this.label13.Text = "Amount of the guessed words: 0";
             // 
             // label14
             // 
@@ -950,11 +951,11 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Tagus", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1084, 58);
+            this.label14.Location = new System.Drawing.Point(1000, 19);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(253, 27);
+            this.label14.Size = new System.Drawing.Size(372, 27);
             this.label14.TabIndex = 88;
-            this.label14.Text = "Not guessed words: 0";
+            this.label14.Text = "Amount of not guessed words: 0";
             // 
             // pictureBox1
             // 
@@ -968,12 +969,24 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.pictureBox1.TabIndex = 86;
             this.pictureBox1.TabStop = false;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(180, 370);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 27);
+            this.label15.TabIndex = 89;
+            // 
             // Form4
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::ViselnikGame.Properties.Resources.G1280;
             this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox1);
@@ -1017,7 +1030,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label12);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HANGED MAN";
@@ -1237,5 +1250,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
         }
     }

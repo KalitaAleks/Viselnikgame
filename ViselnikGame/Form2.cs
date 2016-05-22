@@ -21,6 +21,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
     /// </summary>
     public partial class Form2 : Form
         {
+       
         private void FormResize()
             {
             double W = (int)(Screen.PrimaryScreen.Bounds.Width);
@@ -46,7 +47,9 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\Bg1_1400_900.jpg"); }
             else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\Bg1_1366_768.jpg"); }
             else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\Bg1_1360_768.jpg"); }
-           else if(W!=1600||W!=1400||W!=1366||W!=1360){ this.BackgroundImage = Image.FromFile(@"Resources\Bg1_1280_800.jpg"); }
+            else if (W == 1280) { this.BackgroundImage = Image.FromFile(@"Resources\Bg1_1280_800.jpg"); }
+            else if (W < 1280) { this.BackgroundImage = Image.FromFile(@"Resources\Bg1_1280_800.jpg"); }
+            else if (W > 1600) { this.BackgroundImage = Image.FromFile(@"Resources\Bg1_1600_900.jpg"); }
           
             }
      
@@ -56,7 +59,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         public Form2()
             {
             InitializeComponent();
-            FormResize();
+          FormResize();
             }
 
           
@@ -78,8 +81,15 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private void Button2Click(object sender, EventArgs e)
             {
             Form3 f3 = new Form3();
-            this.Hide();
+            f3.Opacity = 0;
             f3.Show();
+           for (int i = 0; i <= 100; i++)
+                {
+               f3.Opacity = i / 100.0;
+               System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            this.Hide();
+           
             }
 
         /// <summary>
@@ -90,9 +100,15 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private void Button3Click(object sender, EventArgs e)
             {
             Form5 f5 = new Form5();
-            this.Hide();
+            f5.Opacity = 0;
             f5.Show();
-
+            for (int i = 0; i <= 100; i++)
+                {
+                f5.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            Hide();
+                       
             }
             }
         }

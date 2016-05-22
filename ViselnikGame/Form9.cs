@@ -48,7 +48,9 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\PC1400.jpg"); }
             else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\PC1366.jpg"); }
             else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\PC1360.jpg"); }
-            else if (W != 1600 || W != 1400 || W != 1366 || W != 1360) { this.BackgroundImage = Image.FromFile(@"Resources\PC1280.jpg"); }
+            else if (W == 1280) { this.BackgroundImage = Image.FromFile(@"Resources\PC1280.jpg"); }
+             else if (W >1600) { this.BackgroundImage = Image.FromFile(@"Resources\PC1600.jpg"); }
+            else if (W <1280) { this.BackgroundImage = Image.FromFile(@"Resources\PC1280.jpg"); }
             }
         /// <summary>
         /// Form start.
@@ -84,8 +86,14 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             Complexity = 1;
             CallBack.CallBackEventHandler2(Complexity);
             CallBack.CallBackEventHandler(Categories);
-            this.Hide();
+            frm4.Opacity = 0;
             frm4.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                frm4.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            this.Close();
             }
 
         /// <summary>
@@ -98,8 +106,14 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             Complexity = 2;
             CallBack.CallBackEventHandler2(Complexity);
             CallBack.CallBackEventHandler(Categories);
-            this.Hide();
+            frm4.Opacity = 0;
             frm4.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                frm4.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            this.Close();
             }
 
         /// <summary>
@@ -112,15 +126,27 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             Complexity = 3;
             CallBack.CallBackEventHandler2(Complexity);
             CallBack.CallBackEventHandler(Categories);
-            this.Hide();
+            frm4.Opacity = 0;
             frm4.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                frm4.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            this.Close();
             }
 
         private void button4_Click(object sender, EventArgs e)
             {
             Form3 f3 = new Form3();
-            this.Hide();
+            f3.Opacity = 0;
             f3.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                f3.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            this.Close();
             }
         }
     }

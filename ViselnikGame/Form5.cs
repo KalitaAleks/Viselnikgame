@@ -46,7 +46,9 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1400.jpg"); }
             else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1366.jpg"); }
             else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1360.jpg"); }
-            else if (W != 1600 || W != 1400 || W != 1366 || W != 1360) { this.BackgroundImage = Image.FromFile(@"Resources\FON_2_1280.jpg"); }
+            else if (W == 1280) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1280.jpg"); }
+            else if (W <1280) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1280.jpg"); }
+             else if (W >1600) { this.BackgroundImage = Image.FromFile(@"Resources\spravka_1600.jpg"); }
             }
         /// <summary>
         ///  Form start.
@@ -65,8 +67,14 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private void Button1Click(object sender, EventArgs e)
             {
             Form2 f2 = new Form2();
-            this.Hide();
+            f2.Opacity = 0;
             f2.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                f2.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            this.Close();
             }
         }
     }

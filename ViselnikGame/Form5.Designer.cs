@@ -69,7 +69,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.BackgroundImage = global::ViselnikGame.Properties.Resources.spravka_1280;
             this.ClientSize = new System.Drawing.Size(1292, 732);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HANGED MAN";
