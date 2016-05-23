@@ -38,6 +38,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// </summary>
         private void InitializeComponent()
             {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -82,6 +83,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.button29 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,7 +102,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(62, 676);
+            this.button1.Location = new System.Drawing.Point(68, 649);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(195, 37);
             this.button1.TabIndex = 3;
@@ -789,7 +791,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button28.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button28.ForeColor = System.Drawing.Color.White;
-            this.button28.Location = new System.Drawing.Point(281, 676);
+            this.button28.Location = new System.Drawing.Point(425, 649);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(207, 37);
             this.button28.TabIndex = 85;
@@ -980,12 +982,36 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label15.Size = new System.Drawing.Size(0, 27);
             this.label15.TabIndex = 89;
             // 
+            // button29
+            // 
+            this.button29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button29.AutoSize = true;
+            this.button29.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button29.BackColor = System.Drawing.Color.Transparent;
+            this.button29.FlatAppearance.BorderSize = 0;
+            this.button29.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.ForeColor = System.Drawing.Color.White;
+            this.button29.Location = new System.Drawing.Point(285, 649);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(122, 37);
+            this.button29.TabIndex = 90;
+            this.button29.Text = "PAUSE";
+            this.button29.UseVisualStyleBackColor = false;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
             // Form4
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::ViselnikGame.Properties.Resources.G1280;
             this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.Controls.Add(this.button29);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -1031,6 +1057,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label12);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HANGED MAN";
@@ -1251,5 +1278,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button29;
         }
     }

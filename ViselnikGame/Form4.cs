@@ -38,7 +38,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
          this.pictureBox1.Height = wh;
          this.pictureBox1.Left = Convert.ToUInt16(pictureBox1.Location.X * kWidth);
          this.pictureBox1.Top = Convert.ToUInt16(pictureBox1.Location.Y * kHeght);  
-            for (int i = 1; i <= 28; i++)
+            for (int i = 1; i <= 29; i++)
                 {
                 int NewButtonWidth = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Width / 1.991) * kWidth);
                 this.Controls["Button" + i.ToString()].Width = NewButtonWidth;
@@ -240,6 +240,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             label13.Text = "Amount of the guessed words: " + (Game.RightWordsCounter).ToString();
             label14.Text = "Amount of not guessed words: " + errorCount.ToString();
             ActiveControl.Enabled = false;
+            button29.Enabled=true;
             button1.Enabled = true;
             }
 
@@ -330,6 +331,18 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         void Relod2(int param2)
             {
             complexity = param2;
+            }
+
+        private void button29_Click(object sender, EventArgs e)
+            {
+            Form1 f1 = new Form1();
+            f1.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                f1.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            f1.Activate();
             }
         }
     }

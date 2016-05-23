@@ -38,6 +38,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -70,6 +71,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.ClientSize = new System.Drawing.Size(1292, 732);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HANGED MAN";
