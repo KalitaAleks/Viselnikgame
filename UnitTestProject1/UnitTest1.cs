@@ -10,7 +10,6 @@ namespace UnitTestProject1
         public void Entering_letters()
             {
             Game g = new Game();
-            Game.words = Game.Food;
             g.Filling_conclusion();
             g.Letter = 'S';
             g.Start();

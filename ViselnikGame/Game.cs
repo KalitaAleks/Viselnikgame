@@ -19,23 +19,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
     /// </summary>
     public class Game
         {
-        /// <summary>
-        /// Create files of words.
-        /// </summary>
-        public static string[] Food = File.ReadAllLines(@"Resources\FOOD.txt");
-
-        /// <summary>
-        /// Create files of words.
-        /// </summary>
-        public static string[] Transport = File.ReadAllLines(@"Resources\transport.txt");
-
-        /// <summary>
-        /// Create files of words.
-        /// </summary>
-        public static string[] Animals = File.ReadAllLines(@"Resources\animals.txt");
-        /// <summary>
-        ///объект рандом который  задает индекс элемента массива  Words.
-        /// </summary>
+     
         Random rand = new Random();
         /// <summary>
         /// массив индексов 
@@ -60,13 +44,31 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// <summary>
         /// масив в который будет записываться массив выбраной категории.
         /// </summary>
-        public static string[] words = { "" };
-        
+        public static string category;
+        public string[] Words;
+
+        void ReadFile()
+            {
+            if (category.Equals("FOOD"))
+                {
+                Words = File.ReadAllLines(@"Resources\FOOD.txt");
+                }
+
+            if (category.Equals("TRANSPORT"))
+                {
+                Words = File.ReadAllLines(@"Resources\transport.txt");
+                }
+            if (category.Equals("ANIMALS"))
+                {
+                Words = File.ReadAllLines(@"Resources\animals.txt");
+                }
+            }
+
+       
         /// <summary>
         /// //  массив символов в который будет записываться слово.
         /// </summary>
         static char[] word;
-       
         /// <summary>
         ///  //  массив который будем выводить после проверки буквы.
         /// </summary>
@@ -75,11 +77,14 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// <summary>
         /// Функция записывающая выбраное случайно и не повторяющееся с прошлыми слово в массив символов.
         /// </summary>
+        public int index=0;
         public void Filiing_word()
             {
+            ReadFile();
             string randm = rand.Next(0, 20).ToString();
             for (int i = 0; i < 5; i++)
                 {
+                index = i;
                 if (random[i] != null)
                     {
                     if (random[i] == randm)
@@ -90,7 +95,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 if (random[i] == null)
                     {
                     random[i] = randm;
-                    word = words[Convert.ToInt32(random[RightWordsCounter])].ToCharArray();
+                    word = Words[Convert.ToInt32(random[i])].ToCharArray();
                     break;
                     }
                 }
@@ -141,7 +146,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             // Если буква не была обнаружена в слове увеличиваем счетчик неверных букв на единицу.
             if (q == word.Length)
                 {
-                WrongLettersCounter = WrongLettersCounter + 1; ;
+            WrongLettersCounter++ ;
                 }
             // Если счетчик правильных букв равен длине слова то увеличиваем счетчики правильных слов на единицу переходим на след слово и обнуляем счетчки правильных и неправильных букв.
             if (CorrectLettersCounter == word.Length)

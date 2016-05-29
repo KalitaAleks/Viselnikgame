@@ -1,9 +1,7 @@
-Play individually or in groups. 
-Have the student select a letter of the alphabet.
-If the letter is contained in the word/phrase, the group or individual takes another turn guessing a letter.  To reveal a letter (depending on which slide template is used), either:
-Click on the square with appropriate letter in it to reveal the letter within the word/phrase (used with slides 1 and 2)
-Click on the letter in the alphabet area which will then trigger the letter to be revealed if it is contained in the word/phrase or change the color of the Try Again button indicating that the letter is not contained in the word/phrase (used with slide 3).
-If the letter is not contained in the word/phrase, click the Try Again button, a portion of the hangman is added. 
-The game continues until:
-the word/phrase is guessed (all letters are revealed) – WINNER or,
-all the parts of the hangman are displayed – LOSER
+	
+My dear friend, these rules will help you not to be virtually hanged. It is necessary to guess the word in the selected category. Click on the letters and see if they are found in computer word conceived. If yes, then your chances to guess the word grow, no - virtually risk being hanged 
+There are 3 levels of difficulty: 
+Hard (guess five words no room for error) 
+Average (guess five words, 2 for error) 
+Easy (guess all the words for error 4) 
+Good luck =)!

@@ -38,6 +38,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// </summary>
         private void InitializeComponent()
             {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -78,9 +79,11 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button29 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,13 +92,19 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.AutoSize = true;
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(62, 676);
+            this.button1.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(68, 649);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(310, 73);
+            this.button1.Size = new System.Drawing.Size(195, 37);
             this.button1.TabIndex = 3;
             this.button1.Text = "SURRENDER";
             this.button1.UseVisualStyleBackColor = false;
@@ -109,17 +118,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button2.AutoSize = true;
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(69, 430);
             this.button2.Margin = new System.Windows.Forms.Padding(123);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(43, 41);
+            this.button2.Size = new System.Drawing.Size(46, 37);
             this.button2.TabIndex = 5;
             this.button2.Text = "A";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button2.Click += new System.EventHandler(this.ButtonClic);
             // 
             // label1
             // 
@@ -144,17 +157,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button3.AutoSize = true;
             this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(231, 587);
             this.button3.Margin = new System.Windows.Forms.Padding(123);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 41);
+            this.button3.Size = new System.Drawing.Size(43, 37);
             this.button3.TabIndex = 12;
             this.button3.Text = "U";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button3.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button4
             // 
@@ -164,17 +181,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button4.AutoSize = true;
             this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(159, 587);
             this.button4.Margin = new System.Windows.Forms.Padding(123);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(42, 41);
+            this.button4.Size = new System.Drawing.Size(44, 37);
             this.button4.TabIndex = 13;
             this.button4.Text = "T";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button4.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button5
             // 
@@ -184,17 +205,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button5.AutoSize = true;
             this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(87, 587);
             this.button5.Margin = new System.Windows.Forms.Padding(123);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(43, 41);
+            this.button5.Size = new System.Drawing.Size(41, 37);
             this.button5.TabIndex = 14;
             this.button5.Text = "S";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button5.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button6
             // 
@@ -204,17 +229,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button6.AutoSize = true;
             this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(620, 506);
             this.button6.Margin = new System.Windows.Forms.Padding(123);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(45, 41);
+            this.button6.Size = new System.Drawing.Size(41, 37);
             this.button6.TabIndex = 15;
             this.button6.Text = "R";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button6.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button7
             // 
@@ -224,17 +253,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button7.AutoSize = true;
             this.button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.ForeColor = System.Drawing.SystemColors.Control;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(551, 506);
             this.button7.Margin = new System.Windows.Forms.Padding(123);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(46, 41);
+            this.button7.Size = new System.Drawing.Size(43, 37);
             this.button7.TabIndex = 16;
             this.button7.Text = "Q";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button7.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button8
             // 
@@ -244,17 +277,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button8.AutoSize = true;
             this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Control;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(482, 506);
             this.button8.Margin = new System.Windows.Forms.Padding(123);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(43, 41);
+            this.button8.Size = new System.Drawing.Size(41, 37);
             this.button8.TabIndex = 17;
             this.button8.Text = "P";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button8.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button9
             // 
@@ -264,17 +301,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button9.AutoSize = true;
             this.button9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.ForeColor = System.Drawing.SystemColors.Control;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Location = new System.Drawing.Point(413, 506);
             this.button9.Margin = new System.Windows.Forms.Padding(123);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(46, 41);
+            this.button9.Size = new System.Drawing.Size(43, 37);
             this.button9.TabIndex = 18;
             this.button9.Text = "O";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button9.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button10
             // 
@@ -284,17 +325,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button10.AutoSize = true;
             this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button10.BackColor = System.Drawing.Color.Transparent;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.ForeColor = System.Drawing.SystemColors.Control;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Location = new System.Drawing.Point(344, 506);
             this.button10.Margin = new System.Windows.Forms.Padding(123);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 41);
+            this.button10.Size = new System.Drawing.Size(44, 37);
             this.button10.TabIndex = 19;
             this.button10.Text = "N";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button10.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button11
             // 
@@ -304,17 +349,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button11.AutoSize = true;
             this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button11.ForeColor = System.Drawing.SystemColors.Control;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Location = new System.Drawing.Point(275, 506);
             this.button11.Margin = new System.Windows.Forms.Padding(123);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(47, 41);
+            this.button11.Size = new System.Drawing.Size(47, 37);
             this.button11.TabIndex = 20;
             this.button11.Text = "M";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button11.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button12
             // 
@@ -324,17 +373,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button12.AutoSize = true;
             this.button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button12.BackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button12.ForeColor = System.Drawing.SystemColors.Control;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.Location = new System.Drawing.Point(206, 506);
             this.button12.Margin = new System.Windows.Forms.Padding(123);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(40, 41);
+            this.button12.Size = new System.Drawing.Size(36, 37);
             this.button12.TabIndex = 21;
             this.button12.Text = "L";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button12.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button13
             // 
@@ -344,17 +397,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button13.AutoSize = true;
             this.button13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button13.BackColor = System.Drawing.Color.Transparent;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button13.ForeColor = System.Drawing.SystemColors.Control;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Location = new System.Drawing.Point(137, 506);
             this.button13.Margin = new System.Windows.Forms.Padding(123);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(43, 41);
+            this.button13.Size = new System.Drawing.Size(41, 37);
             this.button13.TabIndex = 22;
             this.button13.Text = "K";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button13.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button14
             // 
@@ -364,17 +421,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button14.AutoSize = true;
             this.button14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button14.BackColor = System.Drawing.Color.Transparent;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button14.ForeColor = System.Drawing.SystemColors.Control;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Location = new System.Drawing.Point(68, 506);
             this.button14.Margin = new System.Windows.Forms.Padding(123);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(39, 41);
+            this.button14.Size = new System.Drawing.Size(40, 37);
             this.button14.TabIndex = 23;
             this.button14.Text = "J";
             this.button14.UseVisualStyleBackColor = false;
-            this.button14.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button14.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button15
             // 
@@ -384,17 +445,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button15.AutoSize = true;
             this.button15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button15.BackColor = System.Drawing.Color.Transparent;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button15.ForeColor = System.Drawing.SystemColors.Control;
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.Color.White;
             this.button15.Location = new System.Drawing.Point(344, 430);
             this.button15.Margin = new System.Windows.Forms.Padding(123);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(43, 41);
+            this.button15.Size = new System.Drawing.Size(39, 37);
             this.button15.TabIndex = 24;
             this.button15.Text = "E";
             this.button15.UseVisualStyleBackColor = false;
-            this.button15.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button15.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button16
             // 
@@ -404,17 +469,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button16.AutoSize = true;
             this.button16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button16.BackColor = System.Drawing.Color.Transparent;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button16.ForeColor = System.Drawing.SystemColors.Control;
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ForeColor = System.Drawing.Color.White;
             this.button16.Location = new System.Drawing.Point(620, 430);
             this.button16.Margin = new System.Windows.Forms.Padding(123);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(33, 41);
+            this.button16.Size = new System.Drawing.Size(32, 37);
             this.button16.TabIndex = 25;
             this.button16.Text = "I";
             this.button16.UseVisualStyleBackColor = false;
-            this.button16.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button16.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button17
             // 
@@ -424,17 +493,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button17.AutoSize = true;
             this.button17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button17.BackColor = System.Drawing.Color.Transparent;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button17.ForeColor = System.Drawing.SystemColors.Control;
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.ForeColor = System.Drawing.Color.White;
             this.button17.Location = new System.Drawing.Point(551, 430);
             this.button17.Margin = new System.Windows.Forms.Padding(123);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(45, 41);
+            this.button17.Size = new System.Drawing.Size(43, 37);
             this.button17.TabIndex = 26;
             this.button17.Text = "H";
             this.button17.UseVisualStyleBackColor = false;
-            this.button17.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button17.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button18
             // 
@@ -444,17 +517,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button18.AutoSize = true;
             this.button18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button18.BackColor = System.Drawing.Color.Transparent;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button18.ForeColor = System.Drawing.SystemColors.Control;
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.ForeColor = System.Drawing.Color.White;
             this.button18.Location = new System.Drawing.Point(482, 430);
             this.button18.Margin = new System.Windows.Forms.Padding(123);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(46, 41);
+            this.button18.Size = new System.Drawing.Size(43, 37);
             this.button18.TabIndex = 27;
             this.button18.Text = "G";
             this.button18.UseVisualStyleBackColor = false;
-            this.button18.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button18.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button19
             // 
@@ -464,17 +541,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button19.AutoSize = true;
             this.button19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button19.BackColor = System.Drawing.Color.Transparent;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button19.ForeColor = System.Drawing.SystemColors.Control;
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.ForeColor = System.Drawing.Color.White;
             this.button19.Location = new System.Drawing.Point(413, 430);
             this.button19.Margin = new System.Windows.Forms.Padding(123);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(42, 41);
+            this.button19.Size = new System.Drawing.Size(39, 37);
             this.button19.TabIndex = 28;
             this.button19.Text = "F";
             this.button19.UseVisualStyleBackColor = false;
-            this.button19.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button19.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button20
             // 
@@ -484,17 +565,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button20.AutoSize = true;
             this.button20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button20.BackColor = System.Drawing.Color.Transparent;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button20.ForeColor = System.Drawing.SystemColors.Control;
+            this.button20.FlatAppearance.BorderSize = 0;
+            this.button20.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.Color.White;
             this.button20.Location = new System.Drawing.Point(275, 430);
             this.button20.Margin = new System.Windows.Forms.Padding(123);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(45, 41);
+            this.button20.Size = new System.Drawing.Size(42, 37);
             this.button20.TabIndex = 29;
             this.button20.Text = "D";
             this.button20.UseVisualStyleBackColor = false;
-            this.button20.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button20.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button21
             // 
@@ -504,17 +589,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button21.AutoSize = true;
             this.button21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button21.BackColor = System.Drawing.Color.Transparent;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button21.ForeColor = System.Drawing.SystemColors.Control;
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.ForeColor = System.Drawing.Color.White;
             this.button21.Location = new System.Drawing.Point(206, 430);
             this.button21.Margin = new System.Windows.Forms.Padding(123);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(45, 41);
+            this.button21.Size = new System.Drawing.Size(42, 37);
             this.button21.TabIndex = 30;
             this.button21.Text = "C";
             this.button21.UseVisualStyleBackColor = false;
-            this.button21.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button21.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button23
             // 
@@ -524,17 +613,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button23.AutoSize = true;
             this.button23.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button23.BackColor = System.Drawing.Color.Transparent;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button23.ForeColor = System.Drawing.SystemColors.Control;
+            this.button23.FlatAppearance.BorderSize = 0;
+            this.button23.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.ForeColor = System.Drawing.Color.White;
             this.button23.Location = new System.Drawing.Point(303, 587);
             this.button23.Margin = new System.Windows.Forms.Padding(123);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(43, 41);
+            this.button23.Size = new System.Drawing.Size(47, 37);
             this.button23.TabIndex = 32;
             this.button23.Text = "V";
             this.button23.UseVisualStyleBackColor = false;
-            this.button23.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button23.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button24
             // 
@@ -544,17 +637,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button24.AutoSize = true;
             this.button24.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button24.BackColor = System.Drawing.Color.Transparent;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button24.ForeColor = System.Drawing.SystemColors.Control;
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.ForeColor = System.Drawing.Color.White;
             this.button24.Location = new System.Drawing.Point(447, 587);
             this.button24.Margin = new System.Windows.Forms.Padding(123);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(43, 41);
+            this.button24.Size = new System.Drawing.Size(41, 37);
             this.button24.TabIndex = 33;
             this.button24.Text = "X";
             this.button24.UseVisualStyleBackColor = false;
-            this.button24.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button24.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button25
             // 
@@ -564,17 +661,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button25.AutoSize = true;
             this.button25.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button25.BackColor = System.Drawing.Color.Transparent;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button25.ForeColor = System.Drawing.SystemColors.Control;
+            this.button25.FlatAppearance.BorderSize = 0;
+            this.button25.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.ForeColor = System.Drawing.Color.White;
             this.button25.Location = new System.Drawing.Point(375, 587);
             this.button25.Margin = new System.Windows.Forms.Padding(123);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(50, 41);
+            this.button25.Size = new System.Drawing.Size(53, 37);
             this.button25.TabIndex = 34;
             this.button25.Text = "W";
             this.button25.UseVisualStyleBackColor = false;
-            this.button25.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button25.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button26
             // 
@@ -584,17 +685,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button26.AutoSize = true;
             this.button26.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button26.BackColor = System.Drawing.Color.Transparent;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button26.ForeColor = System.Drawing.SystemColors.Control;
+            this.button26.FlatAppearance.BorderSize = 0;
+            this.button26.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button26.ForeColor = System.Drawing.Color.White;
             this.button26.Location = new System.Drawing.Point(519, 587);
             this.button26.Margin = new System.Windows.Forms.Padding(123);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(43, 41);
+            this.button26.Size = new System.Drawing.Size(44, 37);
             this.button26.TabIndex = 35;
             this.button26.Text = "Y";
             this.button26.UseVisualStyleBackColor = false;
-            this.button26.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button26.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button27
             // 
@@ -604,17 +709,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button27.AutoSize = true;
             this.button27.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button27.BackColor = System.Drawing.Color.Transparent;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button27.ForeColor = System.Drawing.SystemColors.Control;
+            this.button27.FlatAppearance.BorderSize = 0;
+            this.button27.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button27.ForeColor = System.Drawing.Color.White;
             this.button27.Location = new System.Drawing.Point(591, 587);
             this.button27.Margin = new System.Windows.Forms.Padding(123);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(42, 41);
+            this.button27.Size = new System.Drawing.Size(41, 37);
             this.button27.TabIndex = 36;
             this.button27.Text = "Z";
             this.button27.UseVisualStyleBackColor = false;
-            this.button27.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button27.Click += new System.EventHandler(this.ButtonClic);
             // 
             // button22
             // 
@@ -624,17 +733,21 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button22.AutoSize = true;
             this.button22.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button22.BackColor = System.Drawing.Color.Transparent;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button22.ForeColor = System.Drawing.SystemColors.Control;
+            this.button22.FlatAppearance.BorderSize = 0;
+            this.button22.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.ForeColor = System.Drawing.Color.White;
             this.button22.Location = new System.Drawing.Point(137, 430);
             this.button22.Margin = new System.Windows.Forms.Padding(123);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(43, 41);
+            this.button22.Size = new System.Drawing.Size(41, 37);
             this.button22.TabIndex = 41;
             this.button22.Text = "B";
             this.button22.UseVisualStyleBackColor = false;
-            this.button22.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonClic);
+            this.button22.Click += new System.EventHandler(this.ButtonClic);
             // 
             // label11
             // 
@@ -655,11 +768,11 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label12.Font = new System.Drawing.Font("Blasphemy", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DarkRed;
-            this.label12.Location = new System.Drawing.Point(67, 71);
+            this.label12.Font = new System.Drawing.Font("Tagus", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(67, 117);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(383, 115);
+            this.label12.Size = new System.Drawing.Size(370, 96);
             this.label12.TabIndex = 43;
             this.label12.Text = "FOOD ";
             // 
@@ -668,13 +781,19 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button28.AutoSize = true;
             this.button28.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button28.BackColor = System.Drawing.Color.Transparent;
+            this.button28.FlatAppearance.BorderSize = 0;
+            this.button28.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button28.Location = new System.Drawing.Point(381, 676);
+            this.button28.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.ForeColor = System.Drawing.Color.White;
+            this.button28.Location = new System.Drawing.Point(425, 649);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(310, 73);
+            this.button28.Size = new System.Drawing.Size(207, 37);
             this.button28.TabIndex = 85;
             this.button28.Text = "NEXT WORD";
             this.button28.UseVisualStyleBackColor = false;
@@ -816,6 +935,30 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.label10.Size = new System.Drawing.Size(0, 31);
             this.label10.TabIndex = 40;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Tagus", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(615, 19);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(372, 27);
+            this.label13.TabIndex = 87;
+            this.label13.Text = "Amount of the guessed words: 0";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Tagus", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(1000, 19);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(372, 27);
+            this.label14.TabIndex = 88;
+            this.label14.Text = "Amount of not guessed words: 0";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -828,36 +971,48 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.pictureBox1.TabIndex = 86;
             this.pictureBox1.TabStop = false;
             // 
-            // label13
+            // label15
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label13.Location = new System.Drawing.Point(773, 58);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(133, 20);
-            this.label13.TabIndex = 87;
-            this.label13.Text = "Guess words: 0";
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(180, 370);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 27);
+            this.label15.TabIndex = 89;
             // 
-            // label14
+            // button29
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label14.Location = new System.Drawing.Point(974, 63);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(184, 20);
-            this.label14.TabIndex = 88;
-            this.label14.Text = "Not guess the word: 0";
+            this.button29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button29.AutoSize = true;
+            this.button29.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button29.BackColor = System.Drawing.Color.Transparent;
+            this.button29.FlatAppearance.BorderSize = 0;
+            this.button29.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.Font = new System.Drawing.Font("Tagus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.ForeColor = System.Drawing.Color.White;
+            this.button29.Location = new System.Drawing.Point(285, 649);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(122, 37);
+            this.button29.TabIndex = 90;
+            this.button29.Text = "PAUSE";
+            this.button29.UseVisualStyleBackColor = false;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // Form4
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::ViselnikGame.Properties.Resources.exampleWindowVideo1;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::ViselnikGame.Properties.Resources.G1280;
             this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.Controls.Add(this.button29);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox1);
@@ -901,8 +1056,10 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label12);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HANGED MAN";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1120,5 +1277,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button29;
         }
     }
