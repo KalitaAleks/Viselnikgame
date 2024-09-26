@@ -38,5 +38,8 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         ///  Contains returned value
         /// </summary>
         public static CallBackEvent2 CallBackEventHandler2;
+
+        public delegate void CallBackEvent3(string[] what);
+        public static CallBackEvent3 CallBackEventHandler3;
         }
     }

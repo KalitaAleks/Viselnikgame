@@ -19,14 +19,51 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
   
     /// <summary>
     /// Copy of a class of the form.
-    /// </summary>
+    /// </summary>      
+
     public partial class Form4 : Form
         {
+
+        private void FormResize()
+            {
+            double W = (int)(Screen.PrimaryScreen.Bounds.Width);
+            double H = (int)(Screen.PrimaryScreen.Bounds.Height);
+            double kWidth = W / 1292;
+            double kHeght = H / 732;
+            this.Width = Convert.ToInt32(W);
+            this.Height = Convert.ToInt32(H);
+         int ww = Convert.ToUInt16(Convert.ToUInt16(this.pictureBox1.Width / 1.37)*kWidth);
+         int wh = Convert.ToUInt16(Convert.ToUInt16(this.pictureBox1.Height / 1.216)*kHeght);
+         this.pictureBox1.Width = ww;
+         this.pictureBox1.Height = wh;
+         this.pictureBox1.Left = Convert.ToUInt16(pictureBox1.Location.X * kWidth);
+         this.pictureBox1.Top = Convert.ToUInt16(pictureBox1.Location.Y * kHeght);  
+            for (int i = 1; i <= 29; i++)
+                {
+                int NewButtonWidth = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Width / 1.991) * kWidth);
+                this.Controls["Button" + i.ToString()].Width = NewButtonWidth;
+                int NewButtonHeght = Convert.ToInt32(Convert.ToInt32(this.Controls["Button" + i.ToString()].Height / 3.3) * kHeght);
+                this.Controls["Button" + i.ToString()].Height = NewButtonHeght;
+                this.Controls["Button" + i.ToString()].Left = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.X * kWidth);
+                this.Controls["Button" + i.ToString()].Top = Convert.ToUInt16(this.Controls["Button" + i.ToString()].Location.Y * kHeght);
+                NewButtonWidth = 0;
+                NewButtonHeght = 0;
+                }
+
+            if (W == 1600) { this.BackgroundImage = Image.FromFile(@"Resources\G1600.jpg"); }
+            else if (W == 1400) { this.BackgroundImage = Image.FromFile(@"Resources\G1400.jpg"); }
+            else if (W == 1366) { this.BackgroundImage = Image.FromFile(@"Resources\G1366.jpg"); }
+            else if (W == 1360) { this.BackgroundImage = Image.FromFile(@"Resources\G1360.jpg"); }
+            else if (W==1280) { this.BackgroundImage = Image.FromFile(@"Resources\G1280.jpg"); }
+            else if (W < 1280) { this.BackgroundImage = Image.FromFile(@"Resources\G1280.jpg"); }
+            else if (W > 1600) { this.BackgroundImage = Image.FromFile(@"Resources\G1600.jpg"); }
+            }
+
+
         /// <summary>
         /// Copy of class Game.
         /// </summary>
         Game g = new Game();
-
         /// <summary>
         ///  Form start.
         /// </summary>
@@ -47,6 +84,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 this.Controls["label" + (count + 1).ToString()].Text = g.conclusion[count].ToString();
                 count++;
                 }
+            FormResize();
             }
 
         /// <summary>
@@ -89,7 +127,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private void ButtonClic(object sender, EventArgs e)
             {
             // By pressing the button its colour is changed.
-            ActiveControl.BackColor = Color.Red;
+            ActiveControl.BackColor = Color.DarkRed;
 
             //Receive value of a letter
             z = ActiveControl.Text;
@@ -110,18 +148,26 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 }
 
             // We remove the transition button on следуюшее a word.
-            if (Game.RightWordsCounter > g.LastNumberCounter)
+            if (Game.CorrectLettersCounter==g.conclusion.Length && Game.RightWordsCounter+errorCount<=5)
                 {
                 for (int i = 2; i < 28; i++)
                     {
                     this.Controls["button" + (i).ToString()].Enabled = false;
                     }
+                label15.Text = "You guessed a word";
                 button28.Visible = true;
                 }
 
-            //We remove a gallows picture if there was нажта an incorrect letter.
-            pictureBox1.Image = Image.FromFile(@"Resources\" + g.WrongLettersCounter + ".jpg");
+            //We remove a gallows picture if there was press an incorrect letter.
+            if (g.WrongLettersCounter != 0)
+                {
+                pictureBox1.Image = Image.FromFile(@"Resources\" + g.WrongLettersCounter + ".jpg");
+                }
 
+            if (g.WrongLettersCounter == 0)
+                {
+                pictureBox1.Image = null;
+                }
             if (g.WrongLettersCounter == 7 )
                 {
                 count = 0;
@@ -129,7 +175,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 g.WrongLettersCounter = 0;
                 if (Convert.ToInt32(complexity) == 1 && errorCount <= 4)
                     {
-                    g.conclusion = Game.words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
+                    g.conclusion = g.Words[Convert.ToInt32(g.random[g.index])].ToCharArray();
                     conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.
@@ -143,13 +189,13 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
                         }
-
+                    label15.Text = "You did not guess a word";
                     button28.Visible = true;
                     }
 
                 if (Convert.ToInt32(complexity) == 2 && errorCount <= 2)
                     {
-                    g.conclusion = Game.words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
+                    g.conclusion = g.Words[Convert.ToInt32(g.random[g.index])].ToCharArray();
                     conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.
@@ -164,34 +210,37 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
                         }
-
+                    label15.Text = "You did not guess a word";
                     button28.Visible = true;
                     }
 
                 if ((Convert.ToInt32(complexity) == 2 && errorCount > 2) || (Convert.ToInt32(complexity) == 1 && errorCount > 4) || (Convert.ToInt32(complexity) == 3))
                     {
+                    label15.Text = "You did not guess a word";
                     Form6 f6 = new Form6();
-                    this.Hide();
+                    f6.Opacity = 0;
                     f6.Show();
+                    for (int i = 0; i <= 100; i++)
+                        {
+                        f6.Opacity = i / 100.0;
+                        System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                        }
+                    this.Hide();
                     g.WinCounter = 0;
                     g.WrongLettersCounter = 0;
                     Game.RightWordsCounter = 0;
+                    Game.CorrectLettersCounter = 0;
                     for (int i = 2; i < 28; i++)
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
                         }
                     }
                 }
-            if (Game.RightWordsCounter > errorCount && (Game.RightWordsCounter - errorCount)!=0 )
-                {
-                label13.Text = "Guess words: " + (Game.RightWordsCounter - errorCount).ToString();
-                }
-            if (Game.RightWordsCounter == 0 || Game.RightWordsCounter < errorCount)
-                {
-                label13.Text = "Guess words: 0";
-                }
-            label14.Text = "Not guess the word: " + errorCount.ToString();
+
+            label13.Text = "Amount of the guessed words: " + (Game.RightWordsCounter).ToString();
+            label14.Text = "Amount of not guessed words: " + errorCount.ToString();
             ActiveControl.Enabled = false;
+            button29.Enabled=true;
             button1.Enabled = true;
             }
 
@@ -203,13 +252,12 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         private void Button28Click(object sender, EventArgs e)
             {
             g.WinCounter++;
-            Game.RightWordsCounter = g.WinCounter;
             button28.Visible = false;
             g.Filling_conclusion();
             g.WrongLettersCounter = 0;
             Game.CorrectLettersCounter = 0;
             int count = 0;
-
+            label15.Text = "";
             // We specify how many letters in a following word.
             foreach (char el in g.conclusion)
                 {
@@ -223,14 +271,20 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 }
 
             //We return a picture in initial position.
-            pictureBox1.Image = Image.FromFile(@"Resources\0.jpg");
-            ButtonColor();
+            pictureBox1.Image=null;
+            ButtonColor();     
             // If all words have been guessed that we remove the form for a victory.
             if (g.WinCounter == 5)
                 {
                 Form8 f8 = new Form8();
-                this.Hide();
+                f8.Opacity = 0;
                 f8.Show();
+                for (int i = 0; i <= 100; i++)
+                    {
+                    f8.Opacity = i / 100.0;
+                    System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                    }
+                this.Close();
                 g.WinCounter = 0;
                 g.WrongLettersCounter = 0;
                 Game.RightWordsCounter = 0;
@@ -251,8 +305,14 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
 
             // Transition to the form back.
             Form3 f3 = new Form3();
-            this.Close();
+            f3.Opacity = 0;
             f3.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                f3.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            this.Close();
             }
 
         /// <summary>
@@ -271,6 +331,18 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         void Relod2(int param2)
             {
             complexity = param2;
+            }
+
+        private void button29_Click(object sender, EventArgs e)
+            {
+            Form1 f1 = new Form1();
+            f1.Show();
+            for (int i = 0; i <= 100; i++)
+                {
+                f1.Opacity = i / 100.0;
+                System.Threading.Thread.Sleep(1);//чем меньше число, тем быстрее появится
+                }
+            f1.Activate();
             }
         }
     }
